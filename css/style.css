@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    /*全部の初期値設定*/
+}
+
+#home {
+    position: fixed;
+    /* ヘッダーを固定する */
+    top: 0;
+    /* 上部から配置の基準位置を決める */
+    left: 0;
+    /* 左から配置の基準位置を決める */
+    width: 100%;
+    /* ヘッダーの横幅を指定する */
+    height: 40px;
+    /* ヘッダーの高さを指定する */
+    padding: 10px;
+    /* ヘッダーの余白を指定する(上下左右) */
+    background-color: #fff;
+    /* ヘッダーの背景色を指定する */
+}
+
+.dropmenu {
+    list-style-type: none;
+    float: right;
+    width: 960px;
+    padding: 0;
+    margin-right: 30px;
+}
+
+.dropmenu:before,
+.dropmenu:after {
+    content: "";
+    display: table;
+}
+
+.dropmenu:after {
+    clear: both;
+}
+
+.dropmenu li {
+    position: relative;
+    width: 20%;
+    float: right;
+    padding: 0;
+    text-align: center;
+}
+
+.dropmenu li a {
+    display: block;
+    margin: 0;
+    padding: 15px 0 11px;
+    background: #1a1a1a;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1;
+    text-decoration: none;
+}
+
+.dropmenu li ul {
+    list-style: none;
+    position: absolute;
+    z-index: 9999;
+    top: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.dropmenu li ul li {
+    width: 100%;
+}
+
+.dropmenu li ul li a {
+    padding: 13px 15px;
+    border-top: 1px solid #1a1a1a;
+    background: #000000;
+    text-align: left;
+}
+
+.dropmenu li:hover > a {
+    background: #000000;
+}
+
+.dropmenu li a:hover {
+    background: #000000;
+}
+
+#normal li ul {
+    visibility: hidden;
+    perspective: 400px;
+}
+
+#normal li:hover ul {
+    visibility: visible;
+}
+
+#normal ul li {
+    transform: rotateY(90deg);
+    transform-origin: 50% 0;
+    transition: .3s;
+}
+
+#normal li:hover li {
+    transform: rotateY(0);
+}
+
+#normal ul li:nth-child(2) {
+    transition-delay: .1s;
+}
+
+#normal ul li:nth-child(3) {
+    transition-delay: .2s;
+}
+
+#normal ul li:nth-child(4) {
+    transition-delay: .3s;
+}
+
+#normal ul li:nth-child(5) {
+    transition-delay: .4s;
+}
+
+.dropmenu li a:hover {
+    background-color: #a22041;
+}
+
+
+.main_img {
+    width: 100%;
+    height: 780px;
+    background-image: url("../image/IMG_1007.JPG");
+    background-size: cover;
+}
+
+#galary {
+    display: flex;
+    margin: 100px 0;
+}
+
+.photo1 {
+    margin: auto;
+}
+
+.photo2 {
+    margin: auto;
+}
+
+.photo3 {
+    margin: auto;
+}
+
+
+footer {
+    height: 100px;
+    /* フッターの高さを指定する */
+    padding: 30px;
+    /* フッターの余白を指定する(上下左右) */
+    width: 100%;
+    background-image: url("../image/turu.jpeg");
+
+}
+
+footer a {
+    float: right;
+    /* フッター右寄せ*/
+    margin-right: 70px;
+    color: #fff;
+}
+
+.about {
+    font-family: 'IM Fell Great Primer', serif;
+    font-size: 70px;
+    text-align: center;
+    margin: 50px;
+}
+
+.image {
+    text-align: center;
+}
+
+.bun {
+    text-align: center;
+}
+
+#wrap {
+    margin: 20px 20px;
+}
+
+.smallimage {
+    background-color: #fff;
+    border: 3px solid #CCC;
+    padding: 3px;
+    margin: 10px 5px 0 0;
+}
+
+.insta {
+    width: 32%;
+    margin: 20px auto;
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+.bun p {
+    margin: 50px;
+    font-family: 'IM Fell Great Primer', serif;
+    font-size: 20px;
+}
+
+.kou{
+    text-align: center;
+    font-family: 'IM Fell Great Primer', serif;
+}
+
+.warabi{
+    perspective: 1px;
+    text-align: center;
+}
+
+.warabi img {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  width: 320px;
+  height: 240px;
+  transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+    margin-top: 100px;
+}
+
+.warabi img:last-of-type {
+  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
+}
