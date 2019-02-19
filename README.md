@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Miyawaka_Village
 2019年成人式紹介
 
